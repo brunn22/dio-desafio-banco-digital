@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Cliente venilton = new Cliente();
-        venilton.setNome("Bruno"); // Insira o nome do cliente aqui
+        Cliente bruno = new Cliente();
+        bruno.setNome("Bruno"); // Insira o nome do cliente aqui
 
-        Conta cc = new ContaCorrente(venilton);
-        Conta poupanca = new ContaPoupanca(venilton);
+        Conta cc = new ContaCorrente(bruno);
+        Conta poupanca = new ContaPoupanca(bruno);
 
         cc.depositar(300);
         cc.transferir(200, poupanca);
